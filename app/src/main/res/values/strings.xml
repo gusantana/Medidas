@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Medidas</string>
+
+    <string name="descricao_logo_img">Logo Medidas</string>
+
     <string name="label_toolbar_pick_cliente">Escolha um cliente</string>
 
     <string name="title_activity_medidas">MedidasActivity</string>
