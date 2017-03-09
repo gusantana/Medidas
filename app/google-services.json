@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "250958576957",
+    "firebase_url": "https://medidas-90407.firebaseio.com",
+    "project_id": "medidas-90407",
+    "storage_bucket": "medidas-90407.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250958576957:android:11c04dce37e42540",
+        "android_client_info": {
+          "package_name": "com.mysticlabs.medidas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250958576957-2svp26m7a27nsds3su1svr1nalgk4rbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mysticlabs.medidas",
+            "certificate_hash": "46D81E4B0C8C7A6AC9C9E0F34DA8356F04FE723F"
+          }
+        },
+        {
+          "client_id": "250958576957-uflohrtv2jpa5sndiqb0qlbldid0a25u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL5j4yY8O8C11P7dQpjdqsUaaDOg9W4l0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250958576957-uflohrtv2jpa5sndiqb0qlbldid0a25u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

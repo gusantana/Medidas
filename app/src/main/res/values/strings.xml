@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Medidas</string>
+    <string name="label_toolbar_pick_cliente">Escolha um cliente</string>
+
+    <string name="title_activity_medidas">MedidasActivity</string>
+    <string name="contato_sem_nome">Contato sem nome</string>
+    <string name="contato_sem_telefone">Contato sem telefone</string>
+    <array name="medidas">
+        <item>Ombro</item>
+        <item>Busto</item>
+        <item>Costa</item>
+        <item>Peito</item>
+        <item>Decote</item>
+        <item>Altura Busto</item>
+        <item>SS</item>
+        <item>Abaixo Seio</item>
+        <item>Largura Manga</item>
+        <item>Comprimento Corpo Frente</item>
+        <item>Comprimento Corpo Costa</item>
+        <item>Quadril</item>
+        <item>Cintura Saia</item>
+        <item>Cintura Calça</item>
+        <item>Cintura Vestido</item>
+        <item>Cintura Blusa</item>
+        <item>Comprimento Cadeiras</item>
+        <item>Comprimento Manga Curta</item>
+        <item>Comprimento Manga Longa</item>
+        <item>Comprimento Blusa</item>
+        <item>Comprimento Vestido</item>
+        <item>Comprimento Calça</item>
+        <item>Comprimento Saia</item>
+        <item>Joelho</item>
+        <item>Tornozelo</item>
+        <item>Punho</item>
+        <item>Cotovelo</item>
+        <item>Gancho</item>
+    </array>
+
+    <string name="label_trocar_cadastro">Trocar cadastro</string>
+    <string name="facebook_app_id">426302557723212</string>
+
+    <string name="fb_login_protocol_scheme">fb426302557723212</string>
+
+    <string name="label_configuracoes">Configurações</string>
+    <string name="label_sair">Sair</string>
+</resources>
