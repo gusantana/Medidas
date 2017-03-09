@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -34,6 +35,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.TreeMap;
 
 import model.ClienteDAO;
 
@@ -155,12 +157,31 @@ public class ClientesActivity extends AppCompatActivity {
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+	            // parâmetro s é a chave que foi alterada
+	            String key_snapshot = dataSnapshot.getKey();
+	            HashMap<String, Object> aux;
+	            for (int i  = 0; i < lClientes.size(); i++) {
+		            aux = lClientes.get(i);
+		            String key = (String) aux.get("key");
+		            if (key.equals(key_snapshot)) {
+			            aux = (HashMap<String, Object>) dataSnapshot.getValue();
+			            aux.put ("key", key_snapshot);
+			            lClientes.set (i,aux);
+		            }
+	            }
+	            clienteAdapter.notifyDataSetChanged();
 
+
+
+                System.out.println ("onChildChanged");
+                System.out.println ("dataSnapshot: "+dataSnapshot.toString());
+
+                System.out.println ("s: "+s);
             }
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
-                lClientes.remove((HashMap<String, Object>) dataSnapshot.getValue());
+                //lClientes.remove((HashMap<String, Object>) dataSnapshot.getValue());
             }
 
             @Override

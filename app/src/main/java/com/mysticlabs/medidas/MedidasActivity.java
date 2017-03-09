@@ -315,7 +315,7 @@ public class MedidasActivity extends AppCompatActivity {
         aInfo.put ("nome", nome);
         aInfo.put ("telefone", telefone);
 
-        refDB.getRoot().child("clientes").child(key_cliente).updateChildren(aInfo);
+        refDB.getRoot().child("costureiras").child(fb_email).child("clientes").child(key_cliente).updateChildren(aInfo);
 
         TextView lbl_nome_cliente   = (TextView) findViewById(R.id.lbl_nome_cliente_medida);
         TextView lbl_tel_cliente    = (TextView) findViewById(R.id.lbl_telefone_cliente_medida);
